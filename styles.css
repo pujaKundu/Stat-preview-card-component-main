@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+.card {
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 8px;
+    margin-top: 5.5rem;
+}
+
+.heading {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400, 700;
+    color: hsl(0, 0%, 100%);
+    margin-top: -4rem;
+    margin-left: 3rem;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.main-para {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
+
+.stat {
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+}
+
+.stat-heading {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.stat-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    margin-top: 5rem;
+}
+
+.stat-body {
+    margin: 0.6rem;
+}
+
+.img-cover {
+    background: hsl(277, 64%, 61%);
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+img {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    opacity: 0.4;
+}
+
+@media only screen and (max-width: 700px) {
+    .card {
+        display: flex;
+        background-color: hsl(244, 38%, 16%);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+        border-radius: 8px;
+        margin-top: 5.5rem;
+    }
+    img,
+    .img-cover {
+        width: 83.5vw;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 0px;
+        order: 1;
+    }
+    .card {
+        margin: 2rem 0 2rem 1rem;
+    }
+    .card-content {
+        order: 2;
+    }
+    .heading {
+        margin-top: 2rem;
+    }
+    .heading,
+    .main-para {
+        margin: 1rem;
+        text-align: center;
+    }
+    .stat-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: -0.2rem;
+    }
+}
